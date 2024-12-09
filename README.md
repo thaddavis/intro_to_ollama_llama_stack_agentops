@@ -1,0 +1,17 @@
+# TLDR
+
+Repo for the `Intro to Ollama, Llama Stack, & AgentOps` video
+
+## Reference links
+
+- https://ollama.com/
+- https://llama-stack.readthedocs.io/en/latest/
+- https://www.agentops.ai/
+
+## How to setup `Llama Stack`
+
+Check out the `README.llama_stack_setup.md` file
+
+## How to test out 2 simple `Llama Stack` applications
+
+Check out the `README.llama_stack_try_it_out.md` file
