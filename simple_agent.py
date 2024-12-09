@@ -1,4 +1,5 @@
 import asyncio
+import agentops # type: ignore
 import os
 from dotenv import load_dotenv
 
@@ -8,6 +9,8 @@ from llama_stack_client.lib.agents.event_logger import EventLogger
 from llama_stack_client.types.agent_create_params import AgentConfig
 
 load_dotenv()
+
+agentops.init(os.getenv("AGENTOPS_API_KEY"), default_tags=["llama-stack-client-agent"], auto_start_session=False)
 
 LLAMA_STACK_HOST = "127.0.0.1"
 LLAMA_STACK_PORT = 5001
@@ -67,4 +70,6 @@ async def agent_test():
         for log in EventLogger().log(response):
             log.print()
 
+agentops.start_session()
 asyncio.run(agent_test())
+agentops.end_session(end_state="Success")
