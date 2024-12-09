@@ -16,6 +16,6 @@ Check out the `README.llama_stack_setup.md` file
 
 Check out the `README.llama_stack_try_it_out.md` file
 
-## Tips for adding in AgentOps
+## Tips for adding in `AgentOps`
 
 Check out the `README.adding_agentops.md` file
